@@ -40,7 +40,7 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 px-6 relative bg-about-page bg-cover"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
@@ -54,7 +54,31 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="mailto:richardadaji@gmail.com">
+            <Image
+              src={"/email.png"}
+              width={20}
+              height={20}
+              alt="Linkedin Icon"
+            />
+          </Link>
+          <Link href="https://wa.me/2347065469493">
+            <Image
+              src={"/whatsapp.png"}
+              width={20}
+              height={20}
+              alt="Linkedin Icon"
+            />
+          </Link>
+          <Link href="tel:2347065469493">
+            <Image
+              src={"/phone-call.png"}
+              width={20}
+              height={20}
+              alt="Call Icon"
+            />
+          </Link>
+          <Link href="https://github.com/gionsunday">
             <Image
               src={"/github-icon.svg"}
               width={20}
@@ -62,7 +86,7 @@ const EmailSection = () => {
               alt="Github Icon"
             />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="linkedin.com/in/john-sunday-3563a0219">
             <Image
               src={"/linkedin-icon.svg"}
               width={20}
@@ -92,7 +116,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="example@google.com"
               />
             </div>
             <div className="mb-6">

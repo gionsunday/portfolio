@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
@@ -8,7 +9,7 @@ const HeroSec = () => {
   return (
     <section>
       <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7 place-self-center text-center sm:text-left">
+        <div className="col-span-7 place-self-center text-center sm:text-left ">
           <h1 className="text-white mb-4 sm:text-3xl text-4xl lg:6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-orange-800 to-sky-600 ">
               Hello, I'm{" "}
@@ -45,7 +46,7 @@ const HeroSec = () => {
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-orange-800 to-sky-600 hover:bg-slate-300 text-white">
-              Hire Me
+              <Link href="mailto:richardadaji@gmail.com">Hire Me</Link>
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-orange-800 to-sky-600 hover:bg-slate-800 text-white mt-4 ">
               <span className="block bg-[#121212] hover:bg-slate-800 px-5 py-3 rounded-full ">

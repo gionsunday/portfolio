@@ -14,7 +14,7 @@ export default function Home() {
      bg-[#121212]"
     >
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container mt-24 mx-auto px-8 py-4">
         <HeroSec />
 
         <AchievementsSection />
@@ -23,8 +23,8 @@ export default function Home() {
         <hr />
         <ProjectsSection />
         <hr />
-        <EmailSection />
       </div>
+      <EmailSection className="px-6 py-4 mt-24 mx-auto" />
       <Footer />
     </main>
   );
