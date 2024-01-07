@@ -1,8 +1,11 @@
+"use client";
 import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import { useState } from "react";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
+  const [isHover, setIsHover] = useState("hidden");
   return (
     <div>
       <div
@@ -20,8 +23,13 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
             href={previewUrl}
             className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white" />
+            <EyeIcon
+              className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"
+              onMouseEnter={() => setIsHover(" text-white ")}
+              onMouseLeave={() => setIsHover("hidden")}
+            />
           </Link>
+          <label className={isHover}> Visit Website </label>
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-3 bg-[#181818]py-6 px-4">

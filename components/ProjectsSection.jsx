@@ -7,57 +7,111 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
+    title: "Muchency Photo Studio Website",
+    description: "A Photography Website.",
+    image: "/projects/muchency.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://muchencystudiopro2.netlify.app",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Naija Kitchen Website",
+    description: "A website for Nigerian delicacies",
+    image: "/projects/naijakitchen.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://naija-kitchen.onrender.com/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
+    title: "Phoenix NFT Market",
+    description: "Create, Mint and Sell NFT Collections",
+    image: "/projects/phoenix.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://phoenix-nft-market.onrender.com",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Fruitella",
+    description: "Fruits, Vegetable & organic products website ",
+    image: "/projects/fruitella.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://fruitella.onrender.com/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Express Autos",
+    description: "Fullstack Car Auction Website",
+    image: "/projects/express.png",
     tag: ["All", "Web"],
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "http://express-autos.com",
+  },
+  {
+    id: 6,
+    title: "Hubiex Website",
+    description: "Fullstack Trading Website",
+    image: "/projects/hubiex.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://hubiex.com/",
+  },
+  {
+    id: 7,
+    title: "Webserver",
+    description: "API Endpoints",
+    image: "/projects/trans.jpg",
+    tag: ["All", "Servers"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    id: 8,
+    title: "Fullstack Taskmanager(open source)",
+    description: "Fullstack Trading Website",
+    image: "/projects/taskmanager.jpg",
+    tag: ["All", "Servers"],
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://zerotaskmanager.onrender.com",
+  },
+  {
+    id: 9,
+    title: "Job Creator",
+    description: "Fullstack Job API",
+    image: "/projects/jobapi.jpg",
+    tag: ["All", "Servers"],
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://job-api-47pu.onrender.com",
+  },
+  {
+    id: 9,
+    title: "Iwebs Website",
+    description: "Web developers website",
+    image: "/projects/iwebs.jpg",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://iwebs.onrender.com/",
+  },
+  {
+    id: 10,
+    title: "Vendor Server",
+    description: "API ENDPOINTS",
+    image: "/projects/vendor.jpg",
+    tag: ["All", "Servers"],
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://vendors-oze4.onrender.com",
+  },
+  {
+    id: 10,
+    title: "User Dashboard",
+    description: "Full User Dashboard",
+    image: "/projects/dashboard.jpg",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/gionsunday",
+    previewUrl: "https://foxic.onrender.com",
   },
 ];
 
@@ -71,7 +125,7 @@ const ProjectsSection = () => {
   };
 
   const filteredProjects = projectsData.filter((project) =>
-    project.tag.includes(tag)
+    project.tag.includes(tag),
   );
 
   const cardVariants = {
@@ -97,8 +151,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Servers"
+          isSelected={tag === "Servers"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

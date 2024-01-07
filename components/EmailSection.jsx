@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "../../../public/github-icon.svg";
-import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -57,10 +55,20 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
+            <Image
+              src={"/github-icon.svg"}
+              width={20}
+              height={20}
+              alt="Github Icon"
+            />
           </Link>
           <Link href="linkedin.com">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Image
+              src={"/linkedin-icon.svg"}
+              width={20}
+              height={20}
+              alt="Linkedin Icon"
+            />
           </Link>
         </div>
       </div>
@@ -119,9 +127,11 @@ const EmailSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-orange-800 to-sky-600 hover:bg-slate-800 text-white mt-4 "
             >
-              Send Message
+              <span className="block bg-[#121212] hover:bg-slate-800 px-5 py-3 rounded-full ">
+                Send Message{" "}
+              </span>
             </button>
           </form>
         )}
