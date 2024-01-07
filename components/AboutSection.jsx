@@ -64,11 +64,11 @@ const AboutSection = () => {
           lg:w-[350px] lg:h-[350px] relative"
           >
             <Image
-              src="/JOHN.jpg"
+              src="/67315872.png"
               alt="HeroImag"
               width={280}
               height={280}
-              className="absolute   transform -translate-x-1/2
+              className="absolute rounded-full   transform -translate-x-1/2
             -translate-y-1/2 top-1/2 left-1/2"
             />
           </div>
