@@ -36,10 +36,10 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
       </div>
-      <p className="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-orange-800 to-sky-600">-----</p>
-      
+      <p className="text-transparent text-center bg-clip-text bg-gradient-to-r from-blue-500 via-orange-800 to-sky-600">
+        -----
+      </p>
     </div>
-    
   );
 };
 

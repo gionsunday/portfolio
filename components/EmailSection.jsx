@@ -40,7 +40,7 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 px-6 relative bg-about-page bg-cover"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 px-6 relative bg-about-page02 bg-cover"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
@@ -56,7 +56,7 @@ const EmailSection = () => {
         <div className="socials flex flex-row gap-2">
           <Link href="mailto:richardadaji@gmail.com">
             <Image
-              src={"/email.png"}
+              src={"/white-email.png"}
               width={20}
               height={20}
               alt="Linkedin Icon"
@@ -64,7 +64,7 @@ const EmailSection = () => {
           </Link>
           <Link href="https://wa.me/2347065469493">
             <Image
-              src={"/newwhats.png"}
+              src={"/whatsapp-black.png"}
               width={20}
               height={20}
               alt="Linkedin Icon"
@@ -72,7 +72,7 @@ const EmailSection = () => {
           </Link>
           <Link href="tel:2347065469493">
             <Image
-              src={"/phone-call.png"}
+              src={"/white-phone-icon.jpg"}
               width={20}
               height={20}
               alt="Call Icon"
