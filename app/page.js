@@ -22,9 +22,9 @@ export default function Home() {
         <AboutSection />
         <hr />
         <ProjectsSection />
-        <hr />
       </div>
-      <EmailSection className="px-6 py-4 mt-24 mx-auto" />
+
+      <EmailSection className="px-6 py-4  mx-auto" />
       <Footer />
     </main>
   );
