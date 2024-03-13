@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main
       className="flex min-h-screen flex-col
-     bg-[#fff]"
+     bg-[#000]"
     >
       <section className="bg-[#121212] lg:mx-20 ">
         <Navbar />
