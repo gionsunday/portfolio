@@ -38,7 +38,7 @@ const HeroSec = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] mb-6 px-1 sm:text-lg text-lg lg:text-xl">
+          <p className="text-[#ADB7BE] mb-6 px-1 sm:text-lg text-lg lg:text-xl text-justify">
             Unleash the power of cutting-edge technology, seamless design, and
             user-friendly interfaces. Elevate your online presence with a
             developer who not only understands the language of the web but also

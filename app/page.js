@@ -11,21 +11,22 @@ export default function Home() {
   return (
     <main
       className="flex min-h-screen flex-col
-     bg-[#121212]"
+     bg-[#fff]"
     >
-      <Navbar />
-      <div className="container mt-24 mx-auto px-8 py-4">
-        <HeroSec />
+      <section className="bg-[#121212] lg:mx-20 ">
+        <Navbar />
+        <div className="container mt-24 mx-auto px-8 py-4">
+          <HeroSec />
+          <AchievementsSection />
+          <hr />
+          <AboutSection />
+          <hr />
+          <ProjectsSection />
+        </div>
 
-        <AchievementsSection />
-        <hr />
-        <AboutSection />
-        <hr />
-        <ProjectsSection />
-      </div>
-
-      <EmailSection className="px-6 py-4  mx-auto" />
-      <Footer />
+        <EmailSection className="px-6 py-4  mx-auto" />
+        <Footer />
+      </section>
     </main>
   );
 }
