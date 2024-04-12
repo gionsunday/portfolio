@@ -111,7 +111,7 @@ const projectsData = [
     image: "/projects/dashboard.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/gionsunday",
-    previewUrl: "https://foxic.onrender.com",
+    previewUrl: "https://foxic.onrender.com/home",
   },
 ];
 
